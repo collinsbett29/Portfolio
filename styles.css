@@ -26,7 +26,7 @@ nav{
 }
 
 header{
-    background-image: url(./images/background.jpg);
+    background-image: url(./images/back.jpg);
     background-size: cover;
 }
 
@@ -52,6 +52,7 @@ nav a{
 
 .handles {
     color: blue;
+    /* size: 10px; */
 }
 
 .footer {
