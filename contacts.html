@@ -4,71 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/143e555dd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>contacts</title>
   </head>
   <body>
-    <h1>About</h1>
     <!--Navigation bar-->
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
-      <a href="Contacts.html">contacts</a>
-      <a href="">Resume</a>
-    </nav>
+    <div class="navbar">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="blog.html">Blog</a>
+      <a class="nav-link" href="Contacts.html">contacts</a>
+      <a class="nav-link" href="https://docs.google.com/document/d/1ZqVz0vTYJJZbKKjVKxQYm4JmvTEDt0fmCVElmaCeHyw/edit?usp=sharing">Resume</a>
+    </div>
 
     <!--Hero/jumbotron section-->
     <header>
-      <h1>Drop me a line</h1>
       <p>Chat about projects, give feedback and share new ideas</p>
     </header>
     <main>
       <!--MAIN PAGE CONTENT-->
       <section>
         <h2>Contact me</h2>
+        <div class="card">
         <form action="">
+          <label for="email " aria-required="true">Email: </label> <br />
+          <input placeholder="Your email" type="email" name="email" id="email" required/>
+        <!-- </div> -->
           <div>
-            <label for="name">Your name:</label>
-            <input type="text" id="name" name="name" />
+            <label for="name">Your name*:</label> <br />
+            <input placeholder="Your name" type="text" id="name" name="name" />
+          </div>
+          <div class="row">
+            <label for="Tel">Tel: </label> <br />
+            <div class="col-md-3">
+              <input placeholder="+254" type="tel" name="tel" id="tel" />
+            </div>
+            <div class="col-md-1">
+              <input placeholder="07*********" type="tel" name="tel" id="tel" />
+            </div>
           </div>
           <div>
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" />
-          </div>
           <div>
-            <label for="projects">Project type</label>
+            <label for="projects">Project</label> <br />
             <select name="project" id="project">
               <option value="web">Web application</option>
               <option value="mobile">Mobile application</option>
               <option value="Desktop">Desktop application</option>
-            </select>
+            </select> <br />
           </div>
           <div>
-            <label for="message">Your message: </label>
+            <label for="message">Your message: </label> <br />
             <textarea
               name="message"
               id="message"
-              cols="30"
-              rows="10"
+              rows="2"
             ></textarea>
           </div>
-          <div><input type="submit" value="Send" /></div>
+          <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Subscribe to news and offers</label>
+          <div>
+            <input class="submit" type="submit" value="Send message" />
+          </div>
         </form>
+      </div>
       </section>
     </main>
 
-    <!--Footer section-->
-    <footer>
-      <ul>
-        <li><a href="https://maps.google.com/"> Github</a></li>
-        <li><a href="https://maps.google.com/"> Linkedln</a></li>
-        <li><a href="https://maps.google.com/"> Twitter</a></li>
-        <li><a href="https://maps.google.com/"> Instagram</a></li>
-        <li><a href="https://maps.google.com/"> Medium</a></li>
-        <li>
-          <a href="https://accounts.google.com/b/0/AddMailService"> Mail</a>
-        </li>
+    <!--Footer section-->    
+    <footer class="footer">
+      <ul class="handles">  
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-nstagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-medium"></i>
+        <i class="fa-brands fa-mail"></i>
       </ul>
     </footer>
   </body>
