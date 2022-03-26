@@ -25,21 +25,18 @@ body{
 
 a{ 
     text-decoration: none;
-    
 }
 
-h1 {
-    color: white;
-}
 
 h2 {
     text-align: center;
 }
 
 p{
-    color: white;
+    color: #000;
     text-decoration: wavy;
     text-indent: 5px;
+    width: 100%;
 }
 
 nav{
@@ -48,11 +45,28 @@ nav{
 }
 
 header{
-    background-image: url(./images/back.jpg);
     background-size: cover;
     padding-bottom: 10px;
     padding-left: 10px;
 }
+
+.column {
+    float: left;
+    width: 50%;
+  }
+
+ .col{
+     float: left;
+     width: 50% ;
+     margin: 20px;
+ } 
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 nav a{
     color: #fff;
@@ -60,11 +74,27 @@ nav a{
 }
 
 .image {
-    height: 250px;
-    width: 200px;
-    margin-top: 25px;
-    margin-left: 20px;
+    position: relative;
+    margin-left: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 70%;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%  ;
+}
+
+.project{
+    width: 150px;
+}
+
+.project1 {
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
 }
 
 .card {
@@ -76,15 +106,45 @@ nav a{
 
 .handles {
     color: blue;
-    /* size: 10px; */
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.testimonials:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.avatar {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.info {
+    padding: 2px 16px;
+  }
+
+.card {
+    height: 600px;
+    margin-left: 300px;
+    text-align: center;
+}
+
+.submit{
+    background-color: aquamarine;
+    border-radius: 10px;
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
-    bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 0;
+    height: 100px;
     width: 100%;
-    background-color: gray ;
-    color: white;
+
     text-align: center;
 }
