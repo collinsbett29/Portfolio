@@ -30,23 +30,29 @@
         <div class="card">
         <form action="">
           <label for="email " aria-required="true">Email: </label> <br />
-          <input placeholder="Your email" type="email" name="email" id="email" required/>
+          <input placeholder="Your email" type="email" name="email" id="email" required="required"/>
         <!-- </div> -->
+        <br />
           <div>
+            <br />
             <label for="name">Your name*:</label> <br />
-            <input placeholder="Your name" type="text" id="name" name="name" />
+            <input placeholder="Your name" type="text" id="name" name="name" required="required"/>
           </div>
+          <br />
           <div class="row">
             <label for="Tel">Tel: </label> <br />
             <div class="col-md-3">
-              <input placeholder="+254" type="tel" name="tel" id="tel" />
+              <input placeholder="+254" type="tel" name="tel" id="tel" required="required"/>
             </div>
+            <!-- <br /> -->
+             or
             <div class="col-md-1">
-              <input placeholder="07*********" type="tel" name="tel" id="tel" />
+              <input placeholder="07*********" type="tel" name="tel" id="tel" required="required" />
             </div>
           </div>
           <div>
           <div>
+            <br />
             <label for="projects">Project</label> <br />
             <select name="project" id="project">
               <option value="web">Web application</option>
@@ -54,15 +60,17 @@
               <option value="Desktop">Desktop application</option>
             </select> <br />
           </div>
+          <br />
           <div>
             <label for="message">Your message: </label> <br />
             <textarea
               name="message"
               id="message"
               rows="2"
+              required="required"
             ></textarea>
           </div>
-          <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Subscribe to news and offers</label>
+          <input type="checkbox" value="lsRememberMe" id="rememberMe" required="required"> <label for="rememberMe">Subscribe to news and offers</label>
           <div>
             <input class="submit" type="submit" value="Send message" />
           </div>
